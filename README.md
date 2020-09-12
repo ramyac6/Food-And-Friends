@@ -4,7 +4,7 @@ One of things that I've missed the most since quarantine started was going out t
 
 ## What it does
 
-Food and Friends allows you to login and see other people around you that are also interested in making food with others. You can form groups within a certain radius and allows users to have a virtual experience with the Canadian Polar Bear Habitat. It offers an AR viewing of the polar bears, knowledge bites about anatomy adaptations, direct viewing of the website, and much more.
+Food and Friends allows you to login and see other people around you that are also interested in making food with others. You can form groups within a certain radius and allows users to have a virtual cooking experience.
 
 ## How we built it
 
@@ -22,10 +22,8 @@ Tools Used:
 - GitHub
   - File Management
   - Splash page hosting
-
-Radar.io
-
-- Polar bear experience from your own home
+    Radar.io
+- Connects users to other users
 
 ## Challenges we ran into
 
