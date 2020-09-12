@@ -1,7 +1,3 @@
-# Notice:
-
-There's a ghost commit saying that I created and pushed the React Native sample app to Github on September 11 at 11:49PDT. I definitely committed and pushed that this morning so I'm not sure what happened. You can see that all the stuff I did for BostonHacks occurred on September 12.
-
 ## Inspiration
 
 One of things that I've missed the most since quarantine started was going out to restaurants with friends. With many restaurants closed down for safety mesaures, it's even harder to go out. I wanted to build a platform where you can both make new friends and reconnect with old friends to make food in your own home.
