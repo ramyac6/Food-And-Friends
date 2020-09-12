@@ -22,8 +22,8 @@ Tools Used:
 - GitHub
   - File Management
   - Splash page hosting
-    Radar.io
-- Connects users to other users
+- Radar.io
+  - Connects users to other users
 
 ## Challenges we ran into
 
@@ -31,7 +31,7 @@ I'm not a huge fan of React Native so this project was a way for me to start lik
 
 ## Accomplishments that we're proud of
 
-It's functional! Many times in hackathons before I've lost motivation part way through and I didn't want to continue, but I was able to get through this one. I'm particularly proud of getting Firebase to work as that was a struggle.
+It's functional! Many times in hackathons before I've lost motivation part way through and I didn't want to continue, but I was able to get through this one. I'm particularly proud of getting Dialogflow to work as that was a struggle.
 
 ## What we learned
 
@@ -39,9 +39,8 @@ It's functional! Many times in hackathons before I've lost motivation part way t
 - Dialogflow
 - Radar.io
 
-## What's next for VirtualVisit
+## What's next for Food And Friends
 
-- Implement a Meet the Bears page where you can click on each bear and learn more about their personalities
-- Implement Radar.io with the ability to calculate how far away you are from the habitat, how fast you can run compared to a polar bear etc.
-- Bring in the live feed from the website and make it accessible through the app
-- Games to play that help you learn about habitat loss (perhaps a platform game, Donkey Kong style climbing towards the ice
+- Updating Radar.io with the ability to calculate distance from the nearest grocery store.
+- Being able to list what ingredients you have along with your friends and generate a recipe based on what you have (then you have to buy less)
+- Integration with Spoonacular API
