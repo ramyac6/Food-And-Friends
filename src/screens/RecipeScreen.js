@@ -8,6 +8,8 @@ import {
   TouchableOpacity,
 } from "react-native";
 
+import * as WebBrowser from "expo-web-browser";
+
 export default function RecipeScreen({ navigation }) {
   return (
     <View style={styles.container}>
@@ -17,32 +19,59 @@ export default function RecipeScreen({ navigation }) {
         data={[
           {
             id: 1,
-            title: "View in AR",
+            title: "Burrito",
             color: "#FF4500",
             image:
-              "https://raw.githubusercontent.com/ramyac6/polar-bear-demo/master/assets/echoar.png",
-            //link: WebBrowser.openBrowserAsync("https://go.echoar.xyz/wA9W"),
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/burrito.png",
           },
           {
             id: 2,
-            title: "Anatomy",
+            title: "Cake",
             color: "#87CEEB",
             image:
-              "https://raw.githubusercontent.com/ramyac6/polar-bear-demo/master/assets/heart.png",
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/cake.png",
           },
           {
             id: 3,
-            title: "Meet the Bears",
+            title: "Ice Cream",
             color: "#4682B4",
             image:
-              "https://raw.githubusercontent.com/ramyac6/polar-bear-demo/master/assets/bear.png",
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/ice-cream.png",
           },
           {
             id: 4,
-            title: "Visit the Website",
+            title: "Pie",
             color: "#6A5ACD",
             image:
-              "https://raw.githubusercontent.com/ramyac6/polar-bear-demo/master/assets/web.png",
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/pie.png",
+          },
+          {
+            id: 5,
+            title: "Pizza",
+            color: "#85227e",
+            image:
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/pizza.png",
+          },
+          {
+            id: 6,
+            title: "Ramen",
+            color: "#5bd9db",
+            image:
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/ramen.png",
+          },
+          {
+            id: 7,
+            title: "Salad",
+            color: "#7a9c42",
+            image:
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/salad.png",
+          },
+          {
+            id: 8,
+            title: "Sandwich",
+            color: "#ef1f84",
+            image:
+              "https://raw.githubusercontent.com/ramyac6/Food-And-Friends/master/assets/sandwich.png",
           },
         ]}
         horizontal={false}
@@ -55,7 +84,9 @@ export default function RecipeScreen({ navigation }) {
             <TouchableOpacity
               style={[styles.card, { backgroundColor: item.color }]}
               onPress={() => {
-                WebBrowser.openBrowserAsync("https://go.echoar.xyz/wA9W");
+                WebBrowser.openBrowserAsync(
+                  "https://www.allrecipes.com/search/?wt=ramen"
+                );
               }}
             >
               <View style={styles.cardHeader}>
