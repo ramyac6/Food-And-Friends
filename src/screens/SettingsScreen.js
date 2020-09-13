@@ -3,11 +3,26 @@ import { View, Text, StyleSheet } from "react-native";
 
 import { firebase } from "../config/firebaseConfig";
 import Colors from "../constants/Colors";
+import { TouchableOpacity } from "react-native-gesture-handler";
 
 export default function SettingsScreen(props, { navigation }) {
   const usersRef = firebase.firestore().collection("users");
   const userID = props.extraData.id;
   const [userName, setText] = useState("");
+
+  function signout() {
+    firebase
+      .auth()
+      .signOut()
+      .then(function () {
+        // Sign-out successful.
+        console.log("Signed out");
+      })
+      .catch(function (error) {
+        // An error happened.
+        console.log(error);
+      });
+  }
 
   useEffect(() => {
     usersRef
@@ -44,9 +59,11 @@ export default function SettingsScreen(props, { navigation }) {
       <View style={styles.items}>
         <Text style={{ fontSize: 18 }}>Cooking Style: Experimental</Text>
       </View>
-      <View style={styles.logout}>
-        <Text style={{ fontSize: 24 }}>Logout</Text>
-      </View>
+      <TouchableOpacity onPress={signout}>
+        <View style={styles.logout}>
+          <Text style={{ fontSize: 24 }}>Logout</Text>
+        </View>
+      </TouchableOpacity>
     </View>
   );
 }
